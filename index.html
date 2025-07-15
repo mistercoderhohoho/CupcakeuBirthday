@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love! 💕</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Floating particles background -->
+    <div class="particles-container" id="particles"></div>
+    
+    <!-- Confetti container -->
+    <div class="confetti-container" id="confetti"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">💕</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#welcome" class="nav-link" data-section="welcome">
+                        <i class="fas fa-heart"></i> Welcome
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#message" class="nav-link" data-section="message">
+                        <i class="fas fa-birthday-cake"></i> Birthday Message
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link" data-section="gallery">
+                        <i class="fas fa-images"></i> Gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#memories" class="nav-link" data-section="memories">
+                        <i class="fas fa-star"></i> Memories
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#wishes" class="nav-link" data-section="wishes">
+                        <i class="fas fa-gift"></i> Wishes
+                    </a>
+                </li>
+            </ul>
+            <div class="music-toggle" id="musicToggle">
+                <i class="fas fa-music"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="section active">
+        <div class="container">
+            <div class="welcome-content">
+                <div class="floating-hearts"></div>
+                <h1 class="main-title">
+                    <span class="title-line">Happy Birthday</span>
+                    <span class="title-line love-text">My Beautiful Love!</span>
+                </h1>
+                <div class="subtitle">
+                    Today is your special day, and I want to make it magical! ✨
+                </div>
+                <div class="age-display" id="ageDisplay">
+                    <div class="age-number">20</div>
+                    <div class="age-text">20 Years of Amazing</div>
+                </div>
+                <button class="cta-button" onclick="navigateToSection('message')">
+                    <i class="fas fa-gift"></i>
+                    Start the Celebration
+                </button>
+            </div>
+            <div class="welcome-image">
+                <img src="S1.jpg" alt="Birthday Celebration" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday Message Section -->
+    <section id="message" class="section">
+        <div class="container">
+            <div class="message-content">
+                <h2 class="section-title">A Special Message For You</h2>
+                <div class="birthday-cake-container">
+                    <div class="birthday-cake" id="birthdayCake">
+                        <div class="cake-base"></div>
+                        <div class="cake-middle"></div>
+                        <div class="cake-top"></div>
+                        <div class="candles">
+                            <div class="candle">
+                                <div class="flame"></div>
+                                <div class="wick"></div>
+                                <div class="candle-body"></div>
+                            </div>
+                            <div class="candle">
+                                <div class="flame"></div>
+                                <div class="wick"></div>
+                                <div class="candle-body"></div>
+                            </div>
+                            <div class="candle">
+                                <div class="flame"></div>
+                                <div class="wick"></div>
+                                <div class="candle-body"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="blow-candles-btn" id="blowCandles">
+                        💨 Make a Wish & Blow!
+                    </button>
+                </div>
+                <div class="love-message">
+                    <p class="message-text">
+                        My dearest love, on this beautiful day that celebrates your existence, 
+                        I want you to know how incredibly grateful I am to have you in my life. 
+                        Your smile brightens my darkest days, your laugh is my favorite melody, 
+                        and your love is my greatest treasure.
+                    </p>
+                    <p class="message-text">
+                        Every moment with you feels like a celebration, but today is extra special 
+                        because it's all about YOU! You deserve all the happiness, love, and 
+                        beautiful surprises that life has to offer.
+                    </p>
+                    <div class="signature">
+                        With all my love, forever and always ❤️
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Beautiful Moments</h2>
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item" data-image="Meett.png">
+                    <img src="Meett.png" alt="Romantic Moment 1">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="Stare.png">
+                    <img src="Stare.png" alt="Romantic Moment 2">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="Class.png">
+                    <img src="Class.png" alt="Romantic Moment 3">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="Hug.png">
+                    <img src="Hug.png" alt="Romantic Moment 4">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="Night.png">
+                    <img src="Night.png" alt="Heart Shapes">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="Kiss.png">
+                    <img src="Kiss.png" alt="Love Symbols">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Memories Section -->
+    <section id="memories" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Special Memories</h2>
+            <div class="memories-timeline">
+                <div class="memory-card">
+                    <div class="memory-date">First Meeting</div>
+                    <div class="memory-content">
+                        <h3>The Day Everything Changed</h3>
+                        <p>The moment I first saw you, I knew my life would never be the same. Your beautiful smile captured my heart instantly.</p>
+                        <div class="memory-image">
+                            <img src="First.png" alt="Heart Memory">
+                        </div>
+                    </div>
+                </div>
+                <div class="memory-card">
+                    <div class="memory-date">First Date</div>
+                    <div class="memory-content">
+                        <h3>Magic in the Air</h3>
+                        <p>Our first date was perfect - filled with laughter, deep conversations, and the beginning of our beautiful love story.</p>
+                        <div class="memory-image">
+                            <img src="First Date.png" alt="Love Hearts">
+                        </div>
+                    </div>
+                </div>
+                <div class="memory-card">
+                    <div class="memory-date">Today</div>
+                    <div class="memory-content">
+                        <h3>Your Special Day</h3>
+                        <p>Today we celebrate you - the most amazing person in my life. Here's to many more birthdays together!</p>
+                        <div class="memory-image">
+                            <img src="bday.png" alt="Birthday Decorations">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wishes Section -->
+    <section id="wishes" class="section">
+        <div class="container">
+            <h2 class="section-title">Birthday Wishes for You</h2>
+            <div class="wishes-container">
+                <div class="wish-cards">
+                    <div class="wish-card">
+                        <div class="wish-icon">🌟</div>
+                        <h3>May Your Dreams Come True</h3>
+                        <p>I wish for all your dreams to manifest into beautiful realities, and for every step you take to lead you closer to happiness.</p>
+                    </div>
+                    <div class="wish-card">
+                        <div class="wish-icon">💕</div>
+                        <h3>Endless Love & Joy</h3>
+                        <p>May your heart always be filled with love, your days with joy, and your life with all the wonderful things you deserve.</p>
+                    </div>
+                    <div class="wish-card">
+                        <div class="wish-icon">🎉</div>
+                        <h3>Adventures Together</h3>
+                        <p>I wish for countless more adventures together, creating beautiful memories that we'll treasure for a lifetime.</p>
+                    </div>
+                </div>
+                <div class="final-message">
+                    <div class="decorations-showcase">
+                        <img src="Him.png" alt="Birthday Decorations 1" class="decoration-img">
+                        <img src="Love.png" alt="Birthday Decorations 2" class="decoration-img">
+                        <img src="Her.png" alt="Birthday Decorations 3" class="decoration-img">
+                    </div>
+                    <h3>Happy Birthday, My Love!</h3>
+                    <p>Thank you for being the most incredible person in my life. You make every day brighter, every moment sweeter, and every dream worth pursuing. I love you more than words can express!</p>
+                    <button class="celebration-button" id="celebrationButton">
+                        🎊 Start the Celebration! 🎊
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox for gallery -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightboxClose">&times;</span>
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-nav">
+                <button class="lightbox-prev" id="lightboxPrev">❮</button>
+                <button class="lightbox-next" id="lightboxNext">❯</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background music -->
+    <audio id="backgroundMusic" loop>
+        <source src="happy-birthday-music-373165.mp3" type="audio/wav">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
