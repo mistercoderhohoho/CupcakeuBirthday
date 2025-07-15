@@ -6,7 +6,7 @@ const galleryImages = [
     'Meett.png',
     'Stare.png',
     'Class.png',
-    'hug.png',
+    'Hug.png',
     'Night.png',
     'Kiss.png'
 ];
